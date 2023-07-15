@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 85%,#c3f5ff 20%);
+ 
+}
+.navSection{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: chocolate;
+    background-image: linear-gradient(to top, #fff 80%,#c3f5ff 20%);
+}
+.logo{
+    width: 40%;
+    color: white;
+    background-image:linear-gradient(#8d98e3 40%,#854fee 60%) ;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.logo h1{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    animation: agepiche 2s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes agepiche {
+    from{
+        padding-left: 40px;}
+
+        to{
+            padding-right: 40px;
+        }
+    
+}
+
+nav{
+    width: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+}
+nav a:first-child{
+color: #4458dc;
+}
+nav a::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear ;
+}
+nav a:hover:before{
+    width: 100%;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightSide img{
+    max-width: 100%;
+    height: 13rem;
+}
+.rightSide{
+    border-radius: 30% 70% 70% 30% / 30% 36% 64% 70% ;
+    background-color: #e8fbff;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.leftSide{
+    color: black;
+    text-transform: uppercase;
+
+}
+.leftSide h3{
+    font-size: 40px;
+    margin-bottom:20px ;
+    position: relative;
+    font-weight: 500;
+}
+.leftSide h3::after{
+    content: "";
+    width: 450px;
+    height: 3px;
+    position: absolute;
+    background-color: #000;
+    top: 80%;
+    margin-left: .8rem;
+}
+.leftSide h1{
+    margin-top: 20px;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.leftSide .btn1{
+   
+    color: #fff;
+    background-image: linear-gradient(to right, #3248db 0%,#854fee 100%);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+    
+}
+.btn1,.btn2{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius:5px ;
+    display: inline-block;
+    margin-right: 50px;
+}
+.leftSide .btn2{
+
+    color: #222;
+
+    border: solid 2px #4458dc;
+    
+    background-color: #fff;
+    
+}
+.leftSide .btn1:hover{
+    color: #222;
+
+    border: solid 2px #4458dc;
+    background-image: none;
+    box-shadow: none;
+    background-color: #fff;
+}
